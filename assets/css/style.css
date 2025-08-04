@@ -2805,3 +2805,47 @@ footer .footer-bottom .footer-copyright {
     line-height: 55px;
   }
 }
+.pricing-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pricing-filter a {
+  flex: 1 1 180px;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+.pricing-filter a:hover {
+  background-color: #e6f0ff;
+}
+
+.pricing-filter a.is-active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pricing-filter a {
+  width: auto !important;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.d-none {
+  display: none !important;
+}

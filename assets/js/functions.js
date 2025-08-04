@@ -215,6 +215,18 @@
             return false;
         }
     });
+    
+            $('.filter-btn').on('click', function (e) {
+            e.preventDefault();
+            var target = $(this).data('target');
+            $('.filter-btn').removeClass('is-active');
+            $(this).addClass('is-active');
+            $('.price-box').addClass('d-none');
+            $('.precio-' + target).removeClass('d-none');
+        });
+
+     
+
 
 
 }(jQuery));
