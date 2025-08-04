@@ -215,31 +215,35 @@
             return false;
         }
     });
-    document.addEventListener("DOMContentLoaded", function () {
+
+        document.addEventListener("DOMContentLoaded", function () {
         const buttons = document.querySelectorAll(".filter-btn");
-        const boxes = document.querySelectorAll(".price-box");
+        const priceBoxes = document.querySelectorAll(".price-box");
 
         buttons.forEach((btn) => {
             btn.addEventListener("click", function (e) {
             e.preventDefault();
 
-            // Activar botón seleccionado
+            // Quitar 'is-active' de todos
             buttons.forEach((b) => b.classList.remove("is-active"));
+
+            // Activar el botón actual
             this.classList.add("is-active");
 
-            // Obtener target
-            const target = this.getAttribute("data-target");
+            // Ocultar todos los bloques
+            priceBoxes.forEach((box) => box.classList.add("d-none"));
 
-            // Mostrar solo el bloque que corresponde
-            boxes.forEach((box) => {
-                box.classList.add("d-none");
-                if (box.classList.contains("precio-" + target)) {
-                box.classList.remove("d-none");
-                }
-            });
+            // Mostrar el bloque seleccionado
+            const target = this.getAttribute("data-target");
+            const targetBox = document.querySelector(`.precio-${target}`);
+            if (targetBox) {
+                targetBox.classList.remove("d-none");
+            }
             });
         });
     });
+
+   
 
 
 }(jQuery));
