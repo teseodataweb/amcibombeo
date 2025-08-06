@@ -511,6 +511,31 @@
           </div>
           <!-- .row end -->
         </div>
+        <section class="info-section">
+          <h2 class="section-title">Proximos Eventos</h2>
+          <div class="cards-container">
+            <div class="info-card">
+              <h3 class="card-title">Curso de Bombeo Inteligente</h3>
+              <p class="card-text" style="color: #000000">San Luis Potosi</p>
+              <p class="card-text" style="color: #000000">24 de Septiembre del 2025</p>
+              <p class="card-text" style="color: #000000">9:00 AM - 4:00 PM</p>
+            </div>
+            <div class="info-card">
+              <h3 class="card-title">Curso de Bombeo Inteligente</h3>
+              <p class="card-text" style="color: #000000">Ciudad de México</p>
+              <p class="card-text" style="color: #000000">22 de Octubre del 2025</p>
+              <p class="card-text" style="color: #000000">9:00 AM - 4:00 PM</p>
+            </div>
+            <div class="info-card">
+              <h3 class="card-title">Asamblea Genral</h3>
+              <p class="card-text" style="color: #000000">Ciudad de México</p>
+              <p class="card-text" style="color: #000000">Octubre del 2025</p>
+
+            </div>
+          </div>
+        </section>
+
+
         <!-- .container end -->
       </section>
 
@@ -640,7 +665,26 @@
                       class="form-control"
                     />
                   </div>
-                
+                  <div>
+                    <label for="evento">Evento que deseas asistir </label>
+                    <select id="evento" name="evento" class="form-control" required>
+                      <option value="" disabled selected>Selecciona un evento</option>
+                      <option value="Control de Calidad">Curso de Bombeo Inteligente Guadalajara</option>
+                      <option value="Patologías del Concreto">Curso de Bombeo Inteligente San Luis Potosi</option>
+                      <option value="Asamblea Nacional AMCI">Curso de Bombeo Inteligente CDMX</option>
+                    </select>
+                  </div>
+              </div>
+                  <div>
+                    <label for="terminos">
+                      <input
+                        type="checkbox"
+                        id="terminos"
+                        name="terminos"
+                        required
+                      />
+                      Acepto los términos y condiciones
+                    </label>                  
                   <div>
                     <input
                       type="submit"

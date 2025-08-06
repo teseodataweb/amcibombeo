@@ -2805,3 +2805,67 @@ footer .footer-bottom .footer-copyright {
     line-height: 55px;
   }
 }
+/* Sección general */
+.info-section {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  color: #1D4ED8;
+}
+
+/* Título de la sección */
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #6262a0;
+}
+
+/* Contenedor de los cuadros */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.info-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 51, 204, 0.3); 
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none; 
+  color: inherit; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 51, 204, 0.5); 
+}
+
+.card-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #343a40; 
+}
+
+.card-text {
+  font-size: 16px;
+  color: #000000; 
+}
+
