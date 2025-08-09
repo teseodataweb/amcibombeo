@@ -649,6 +649,15 @@
                       class="form-control"
                     />
                   </div>
+                                    <div>
+                    <label for="evento">Evento que deseas asistir </label>
+                    <select id="evento" name="evento" class="form-control" required>
+                      <option value="" disabled selected>Selecciona un evento</option>
+                      <option value="Bombeo Guadalajara">Curso de Bombeo Inteligente Guadalajara</option>
+                      <option value="Bombeo SLP">Curso de Bombeo Inteligente San Luis Potosi</option>
+                      <option value="Bombeo CDMX">Curso de Bombeo Inteligente CDMX</option>
+                    </select>
+                  </div>
                 
                   <div>
                     <label for="adicional">Mensaje Adicional</label>
@@ -659,17 +668,19 @@
                       class="form-control"
                     />
                   </div>
-                  <div>
-                    <label for="evento">Evento que deseas asistir </label>
-                    <select id="evento" name="evento" class="form-control" required>
-                      <option value="" disabled selected>Selecciona un evento</option>
-                      <option value="Control de Calidad">Curso de Bombeo Inteligente Guadalajara</option>
-                      <option value="Patologías del Concreto">Curso de Bombeo Inteligente San Luis Potosi</option>
-                      <option value="Asamblea Nacional AMCI">Curso de Bombeo Inteligente CDMX</option>
-                    </select>
+
                   </div>
 
-                
+                  <div>
+                    <label for="terminos">
+                      <input
+                        type="checkbox"
+                        id="terminos"
+                        name="terminos"
+                        required
+                      />
+                      Acepto los términos y condiciones
+                    </label>                  
                   <div>
                     <input
                       type="submit"
@@ -847,7 +858,7 @@
     });
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbzA5FO2ue2UxL3-HhQ6yal3ZbUWyG5YQ2C2ptCGILZhbddrF6oqnCOO-T5d3zFIQJ6q/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbwZoO9M6ThvchPcsRzEMxBEV-waPrjb2tb2aaIQ1u1VKB6yr086V7IoferiaN_qSOV7/exec', {
         method: 'POST',
         body: formData
       });
