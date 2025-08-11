@@ -2826,7 +2826,7 @@ footer .footer-bottom .footer-copyright {
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
   gap: 30px;
-  padding: 0; /* sin padding aquí */
+  padding: 0; 
   background: transparent;
   box-sizing: border-box;
 }
@@ -2834,8 +2834,8 @@ footer .footer-bottom .footer-copyright {
 .cta-img {
   flex: 0 0 40%;
   max-width: 40%;
-  height: auto; /* dejamos que sea auto para no deformar */
-  max-height: 400px; /* para que no sobrepase la altura */
+  height: auto; 
+  max-height: 400px; 
   border-radius: 15px 0 0 15px;
   object-fit: cover;
   display: block;
