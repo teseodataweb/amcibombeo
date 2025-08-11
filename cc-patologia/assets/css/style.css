@@ -2900,3 +2900,66 @@ footer .footer-bottom .footer-copyright {
     padding: 30px 20px;
   }
 }
+.recuadros-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.recuadro {
+  background-color: white;
+  border: 2px solid navy;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.recuadro h3 {
+  margin-top: 0;
+  color: navy;
+}
+
+.recuadro hr {
+  border: 0;
+  height: 2px;
+  background-color: navy;
+  margin: 10px 0;
+}
+
+.precio {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0 15px 0;
+  color: black;
+}
+
+.recuadro ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recuadro ul li {
+  margin-bottom: 5px;
+}
+
+
+  
+  @media (max-width: 992px) {
+    .recuadros-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .recuadro {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .price-box .pricing-footer {
+    display: none;
+  }
